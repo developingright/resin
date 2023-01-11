@@ -1,0 +1,1 @@
+This project contains a web application based on React and Flask (RESIN)
