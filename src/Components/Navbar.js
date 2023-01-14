@@ -1,10 +1,10 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav className="navbar navbar-expand-lg navbar-light shadow-sm" id="mainNav">
             <div className="container px-5">
-                <a className="navbar-brand fw-bold" href="#page-top">RESIN</a>
+                <Link to="/" className="navbar-brand fw-bold">RESIN</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i className="bi-list"></i>
@@ -17,7 +17,7 @@ export default function Navbar() {
                     <button className="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span className="d-flex align-items-center">
                             <i className="bi-chat-text-fill me-2"></i>
-                            <span className="small">Sign up</span>
+                            <span className="small"> <Link to="/Signin" className="nav-link me-lg-3">Sign In</Link></span>
                         </span>
                     </button>
                 </div>

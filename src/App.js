@@ -6,14 +6,17 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import SignIn from "./Components/SignIn";
 
 function App() {
   return (
     <>
-      <Navbar />
+      
       <Router> 
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path="/Signin" element={<SignIn/>} />
         </Routes>
       </Router>
     </>
