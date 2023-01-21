@@ -28,3 +28,11 @@
   width: 100%;
   height: calc(100vh - 56px);
 }
+.signin-img{
+  object-fit: cover;
+  object-position: left; 
+  height: calc(100vh - 56px);
+}
+.signin-form{
+  width: "23rem";
+}
