@@ -13,7 +13,7 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        {navLinks.map(x =>  <li className="nav-item"> <a className="nav-link me-lg-3" href={x.link}> {x.name} </a> </li>)}
+                        {navLinks.map(x =>  <li className="nav-item" key={x.name}> <a className="nav-link me-lg-3" href={x.link}> {x.name} </a> </li>)}
                     </ul>
                     <button className="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span className="d-flex align-items-center">
