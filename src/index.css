@@ -36,6 +36,11 @@
 }
 .card {
   box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+  
+}
+.card-body{
+  padding: 0 ;
+  overflow: hidden;
 }
 .card .card-header {
   font-weight: 500;
@@ -44,7 +49,7 @@
   border-radius: 0.35rem 0.35rem 0 0;
 }
 .card-header {
-  padding: 1rem 1.35rem;
+  /* padding: 1rem 1.35rem; */
   margin-bottom: 0;
   background-color: rgba(33, 40, 50, 0.03);
   border-bottom: 1px solid rgba(33, 40, 50, 0.125);
@@ -66,6 +71,16 @@
   border-radius: 0.35rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.next-button{
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
+  color: white;
+  background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(25,14,68,1) 0%, rgba(55,33,115,1) 100%);
+  border: none;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
 .signin-img{
   object-fit: cover;
   object-position: left; 
@@ -73,4 +88,75 @@
 }
 .signin-form{
   width: "23rem";
+}
+.sign-up-form{
+  padding: 2em;
+}
+.sign-up-label{
+  color: #34495e;
+}
+.sign-up-input{
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  width: 150%;
+}
+.sign-up-input:focus{
+  border: 2px solid #b700ff !important;
+  box-shadow: 0 0 3px #b700ff !important;
+}
+.signup-img{
+  object-fit: cover !important;
+  object-position: left;
+}
+.signup-banner{
+  overflow: hidden;
+  background-image: url('../public/images/placeholder.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
+}
+.signup-title{
+  margin-top: 2em;
+}
+.signup-check{
+  padding: 0.5em;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.signup-check,label{
+  padding-right: 1em;
+}
+.checks input[type="radio"]{
+  position: absolute;
+  float: right;
+}
+.checks {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #e1e2e7;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  width: 150px;
+  display:inline-flex;
+  white-space: nowrap;
+  justify-items: center;
+  align-items: center;
+  padding:0.5em;
+}
+.checks p{
+  margin-left: 2em;
+  margin-top: 0.5em;
+}
+.checked{
+  border: 2px solid #216ee0;
+  background: #eaf1fe;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
