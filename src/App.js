@@ -9,18 +9,23 @@ import {
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
 import NotFound from "./Components/NotFound";
+import ProfilePage from "./Components/ProfilePage";
 
 function App() {
+  const urls = 
+  [
+    {path: '/',comp: <Home />},
+    {path:'/Signup',comp:<SignUp/>},
+    {path:'/Signin',comp:<SignIn/>},
+    {path:'/Profile',comp:<ProfilePage/>},
+    {path:"*",comp:<NotFound/>}
+  ]
   return (
     <>
-      
       <Router> 
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/Signup' element={<SignUp/>}/>
-          <Route path="/Signin" element={<SignIn/>} />
-          <Route path="*" element={<NotFound/>}/>
+          {urls.map(x => <Route key = {x} path={x.path} element={x.comp} />)}
         </Routes>
       </Router>
     </>
